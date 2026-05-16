@@ -20,7 +20,7 @@ CROPS = {
     "Strawberry": {"time": 360,  "emoji": "🍓"},
     "Corn":       {"time": 720,  "emoji": "🌽"},
     "Grape":      {"time": 600,  "emoji": "🍇"},
-    "Eggplant":   {"time": 300,  "emoji": "🍆"},
+    "Eggplant":   {"time": 420,  "emoji": "🍆"},
     "Tea":        {"time": 45,   "emoji": "🍵"},
     "Cacao":      {"time": 300,  "emoji": "🍫"},
     "Avocado":    {"time": 780,  "emoji": "🥑"},
