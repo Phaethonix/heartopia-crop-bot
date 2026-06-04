@@ -1,5 +1,3 @@
-# Crop Timer Bot
-# Copyright (C) 2026 phoenixlab
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from datetime import datetime, timedelta
