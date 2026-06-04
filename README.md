@@ -111,7 +111,7 @@ Send these as direct messages to the bot.
 | Command | Description |
 | :--- | :--- |
 | `/settime` | Opens an inline keyboard to start a crop timer | 
-|(Telegram Only)| custom timers, multiple timer for same crops |
+|(Telegram Only)| Custom timers, multiple timer for same crops |
 | `/mytime` | Lists all your active crop timers and time remaining |
 | `/clear` | Clears all your active crop timers |
 

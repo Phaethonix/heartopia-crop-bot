@@ -54,9 +54,16 @@ def format_time_left(minutes_left):
 
 
 def parse_custom_time(text):
-    """Parse user input like '5h 33m', '2h', '45m', '1h30m' into minutes. Returns None if invalid."""
+    """Parse user input into minutes.
+    Supports: 55 → 55min | 5h 33m | 2h | 45m | 1h30m"""
     text = text.strip().lower()
-    # Try natural format: 5h 33m / 1h30m / 2h / 45m
+
+    # Plain number = minutes (e.g. 55, 69)
+    if re.fullmatch(r"\d+", text):
+        mins = int(text)
+        return mins if mins > 0 else None
+
+    # Natural format: 5h 33m / 1h30m / 2h / 45m
     pattern = r"(?:(\d+)\s*h)?\s*(?:(\d+)\s*m)?"
     match = re.fullmatch(pattern, text)
     if match and (match.group(1) or match.group(2)):
@@ -64,8 +71,8 @@ def parse_custom_time(text):
         mins = int(match.group(2) or 0)
         total = hours * 60 + mins
         return total if total > 0 else None
-    return None
 
+    return None
 
 def get_next_timer_key(user_id, crop_name):
     """Generate a unique key like Grape, Grape#2, Grape#3 etc."""
