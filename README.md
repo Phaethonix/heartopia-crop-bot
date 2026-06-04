@@ -111,7 +111,7 @@ Send these as direct messages to the bot.
 | Command | Description |
 | :--- | :--- |
 | `/settime` | Opens an inline keyboard to start a crop timer | 
-|(Telegram Only) custom timers, multiple timer for same crops |
+|(Telegram Only)| custom timers, multiple timer for same crops |
 | `/mytime` | Lists all your active crop timers and time remaining |
 | `/clear` | Clears all your active crop timers |
 
@@ -127,7 +127,7 @@ Send these as direct messages to the bot.
 | 🥔 Potato | 1h |
 | 🥕 Carrot | 2h |
 | 🌾 Wheat | 4h |
-| 🍆 Eggplant | 5h |
+| 🍆 Eggplant | 7h |
 | 🍫 Cacao | 5h |
 | 🍓 Strawberry | 6h |
 | 🍇 Grape | 10h |
